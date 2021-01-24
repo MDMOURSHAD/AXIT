@@ -18,19 +18,36 @@ HEADER SECTION CSS HERE
 
 header{
 	background: #000;
-	padding:10px 0;
+	padding:5px 0;
 	width:100%;
+}
+.nav-item {
+    margin-left: 20px !important;
 }
 .nav-link{
 	color:#b0b0b0 !important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:600;
 	font-size: 14px;
+    position:relative;
+    padding: 1rem 1rem !important;
 }
 .nav-link:hover{
 	color:#fff !important;
 }
-
+.nav-link:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 2px;
+    bottom: 0;
+    background: #b0b0b0;
+    width: 0%;
+}
+.nav-link:hover:after{
+    width:100%;
+    transition:.4s;
+}
 /**************************
 BANNER SECTION CSS HERE
 **************************/
@@ -66,7 +83,7 @@ BANNER SECTION CSS HERE
     font-size: 16px;
     font-weight: 300;
     color: #cfcfd0;
-    width: 73%;
+    width: 69%;
     margin: 30px 0;
 }
 .banner-text button{
@@ -93,7 +110,7 @@ BANNER SECTION CSS HERE
 }
 .banner-form .card-header{
 	background: #f5f5f5;
-  	padding: 1rem 1rem;
+  	padding: 16px 16px;
 }
 .banner-form .card-header h2{
 	font-family: 'Open Sans', sans-serif;
@@ -105,7 +122,7 @@ BANNER SECTION CSS HERE
     text-align: center;
 }
 .banner-form .card-body {
-    padding: 1rem 2rem;
+    padding: 16px 32px;
 }
 .banner-form .card-header h2 span{
 	color:#ff8b38;
@@ -166,8 +183,8 @@ SOCIAL MEDIA SECTION CSS HERE
     color: #a4a4a7;
     margin-bottom: 0;
 }
-.social-media .icon {
-   
+.social-media .icon ul{
+   margin-bottom:0;
 }
 .social-media .icon ul li{
     list-style: none;
@@ -191,8 +208,12 @@ SERVICE SECTION CSS HERE
 	background:#f5f5f5;
 	padding:80px 0;
 }
+.service .col-md-2{
+    padding-left:0 !important;
+}
 .service ul{
-	padding-left:0;
+    padding-left:0 !important;
+    margin-bottom:0 !important;
 }
 .service ul li {
     list-style: none;
@@ -202,9 +223,6 @@ SERVICE SECTION CSS HERE
     background: #ff8b38;
     line-height: 110px;
     border: 1px solid #ddd;
-}
-.service ul{
-	margin-bottom:0 !important;
 }
 .service ul li a{
     font-family: 'Open Sans', sans-serif;
@@ -360,7 +378,6 @@ AWESOME SECTION CSS HERE
     width: 60px;
     height: 3px;
     margin: 25px auto;
-    
 }
 .title p{
 	font-family: 'Open Sans', sans-serif;
@@ -405,6 +422,9 @@ PRICIING SECTION CSS HERE
     background:#f5f5f5;
     padding:70px 0;
     text-align:center;
+}
+.pricing .title h2{
+    font-weight: 500;   
 }
 .pricing-table-list{
     margin-top:60px;
@@ -496,6 +516,9 @@ TESTIMONIAL SECTION CSS HERE
     width:100%;
     padding:90px 0;
 }
+.testimonial .title h2{
+    font-weight: 500;   
+}
 .m-60{
     margin-top:60px;
 }
@@ -538,4 +561,146 @@ TESTIMONIAL SECTION CSS HERE
     font-size: 14px;
     font-weight: 400;
     color:#949598;
+}
+
+/************************
+AXURE SECTION CSS HERE
+************************/
+
+.axure{
+    width:100%;
+    padding:80px 0px;
+    background:url('../img/axure-bg.png');
+}
+.axure .title h2{
+    color:#fff;
+    font-weight:500;
+}
+.axure .title .line{
+    background:#fff;
+    font-weight:500;
+}
+.axure .title p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size:16px;
+}
+.axure .title button{
+    padding: 8px 35px;
+    background: transparent;
+    border:1px solid #fff;
+    color:#fff;
+    transition:.3s;
+    outline:none;
+    margin-top:10px;
+}
+
+ .axure .title  button:hover{
+    color:black;
+    background: white;
+}
+
+/**************************
+CONTACT SECTION CSS HERE
+**************************/
+
+.contact{
+    width:100%;
+    padding: 80px 0px;
+}
+.contact .title h2{
+    font-weight:500;
+}
+.contact form{
+    margin-top:60px;
+}
+.contact form input[type='text'],
+.contact form input[type='email']{
+    padding:10px 0px 10px 10px;
+    width:100%;
+    outline:none;
+    border:none;
+    border-bottom:1px solid #d6d6d6;
+    color:#bdbdbd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact form input[type='text']::placeholder,
+.contact form input[type='email']::placeholder{
+    color:#bdbdbd;
+}
+.contact form textarea{
+    padding:10px 0px 10px 10px;
+    width:100%;
+    outline:none;
+    border:none;
+    border-bottom:1px solid #d6d6d6;
+    color:#bdbdbd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-left: 40px;
+    font-weight: 400;
+    height: 165px;
+}
+.contact form textarea::placeholder{
+    color:##bdbdbd;
+}
+.contact form .input-1,
+.contact form .input-2{
+    margin-bottom:20px;
+}
+.form-btn{
+    margin-top:40px;
+    text-align:center;
+}
+.contact form input[type='submit'] {
+    padding: 13px 20px;
+    background: tomato;
+    color: #fff;
+    opacity:.9;
+    padding: 10px 22px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition:.3s;
+}
+.contact form input[type='submit']:hover{
+    opacity:1; 
+}
+
+/******************************
+FOOTER SECTION CSS HERE
+******************************/
+
+footer{
+    width:100%;
+    padding:20px 0px;
+    text-align:center;
+    background: #000000;
+}
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+footer ul li a{
+    font-size:24px;
+    color:#cccccc;
+}
+footer ul li a:hover{
+    color:#cccccc !important;
+}
+footer p {
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color:#686868;
+    text-transform:capitalize;
 }
