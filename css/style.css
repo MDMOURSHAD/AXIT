@@ -52,14 +52,16 @@ header{
 BANNER SECTION CSS HERE
 **************************/
 
-.banner{
-	width:100%;
-	background: url('../img/banner-bg.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+.banner {
+    width: 100%;
+    background: url(../img/banner-bg.png),linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
 .banner-text{
-    height:90vh;
+    height:100vh;
     display:table-cell;
     vertical-align: middle;
 }
@@ -101,12 +103,13 @@ BANNER SECTION CSS HERE
 }
 
 .banner-form{
-    height:90vh;
+    height:100vh;
     display:table-cell;
     vertical-align: middle;
 }
-.banner-form .card{
-	border:none;
+.banner-form .card {
+    border: none;
+    margin-left: 190px;
 }
 .banner-form .card-header{
 	background: #f5f5f5;
@@ -138,7 +141,7 @@ BANNER SECTION CSS HERE
 .banner-form .card-body input[type="password"]{
     margin-bottom:30px;
 }
-.banner-form .card-body input:placeholder{
+.banner-form .card-body input::placeholder{
 	color:#cecece;
 }
 .banner-form .card-body input:focus{
@@ -163,10 +166,15 @@ BANNER SECTION CSS HERE
 .banner-form .card-footer input:focus {
   	outline:none;
 }
-
+.navbar-toggler {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color:#111;
+}
 /*******************************
 SOCIAL MEDIA SECTION CSS HERE
 *******************************/
+
 .social-media{
 	padding:20px 0;
 }
@@ -220,18 +228,29 @@ SERVICE SECTION CSS HERE
     width: 110px;
     height: 110px;
     text-align: center;
-    background: #ff8b38;
+    background: #333333;
     line-height: 110px;
     border: 1px solid #ddd;
-}
-.service ul li a{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 700;
     color:#fff !important;
-    display:block;
     cursor:pointer;
+
 }
+
+/*.service ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color:#fff !important;
+    cursor:pointer;
+    display:block;
+
+ }*/
+ .active-color{
+    background: #ff8b38 !important;
+ }
 .tab-1{
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
@@ -239,9 +258,6 @@ SERVICE SECTION CSS HERE
 .tab-3{
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
-}
-.tab-2,.tab-3{
-	background:#333333 !important;
 }
 .service h4{
 	font-family: 'Open Sans', sans-serif;
@@ -268,6 +284,13 @@ SERVICE SECTION CSS HERE
     font-size: 15px;
     font-weight: 600;
     outline:none;
+}
+.service .col-md-4{
+    display: flex;
+    align-items:center;
+}
+.service img{
+    max-width:100%;
 }
 
 /*******************************
@@ -335,7 +358,7 @@ STANDARD PICTURE SECTION CSS HERE
 	background: #f5f5f5;
 	padding:80px 0px;
 }
-.standard-pic  h3{
+.standard-pic h3{
 	font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -354,7 +377,9 @@ STANDARD PICTURE SECTION CSS HERE
     width: 86%;
     color: #86878b;
 }
-
+.standard-pic p:last-child {
+    margin-bottom: 0px;
+}
 /***********************************
 AWESOME SECTION CSS HERE
 ************************************/
@@ -384,6 +409,9 @@ AWESOME SECTION CSS HERE
     font-size: 14px;
     font-weight: 400;
     color: #86878b;
+}
+.awesome .m-60{
+    margin-top:60px;
 }
 .awesome .content{
 	text-align:center;
@@ -519,7 +547,7 @@ TESTIMONIAL SECTION CSS HERE
 .testimonial .title h2{
     font-weight: 500;   
 }
-.m-60{
+.testimonial .m-60{
     margin-top:60px;
 }
 .testimonial .review{
@@ -632,7 +660,7 @@ CONTACT SECTION CSS HERE
 }
 .contact form textarea{
     padding:10px 0px 10px 10px;
-    width:100%;
+    width: 93%;
     outline:none;
     border:none;
     border-bottom:1px solid #d6d6d6;
@@ -644,11 +672,14 @@ CONTACT SECTION CSS HERE
     height: 165px;
 }
 .contact form textarea::placeholder{
-    color:##bdbdbd;
+    color:#bdbdbd;
 }
 .contact form .input-1,
 .contact form .input-2{
     margin-bottom:20px;
+}
+.input-message{
+    overflow:hidden;
 }
 .form-btn{
     margin-top:40px;
@@ -683,6 +714,9 @@ footer{
     padding:20px 0px;
     text-align:center;
     background: #000000;
+}
+footer ul{
+    padding-left:0px;
 }
 footer ul li {
     list-style: none;

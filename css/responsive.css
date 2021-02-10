@@ -1,0 +1,648 @@
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+
+  .banner{
+    height:80vh;
+  }
+  .banner-text{
+  	height:80vh;
+  }
+  .banner-text p{
+  	width:100%;
+  }
+  .banner-form {
+  	height:80vh;
+  }
+  .banner-form .card {
+    margin-left: 20px;
+  }
+  .social-media .col-md-8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-media .icon ul li {
+    margin-left: 25px;
+  }
+  .icon ul li a {
+    font-size: 40px;
+  }
+  .service {
+    padding: 60px 0;
+  }
+  .service h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .service p {
+    width: 100%;
+  }
+  .sub-list {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .sub-list .row {
+    flex-direction: column;
+  }
+  .sub-list .col-md-6 {
+    width: 100%;
+  }
+  .sub-img {
+    justify-content: center;
+    display: flex;
+  }
+  .sub-list .details p {
+    width: 100%;
+  }
+  .info .row {
+    flex-direction: row;
+  }
+  .info .row .col-2 {
+    text-align:right;
+  }
+  .sub-list .info p {
+    width: 100%;
+  }
+  .standard-pic {
+    padding: 60px 0px;
+  }
+  .standard-pic p {
+    width: 100%;
+  }
+ .standard-pic .standard-pic-img {
+    display: flex;
+    align-items: center;
+  }
+  .awesome {
+    padding: 60px 0px;
+  }
+  .title h2{
+  	font-size:30px;
+  }
+  .awesome .m-60{
+  	margin-top:40px;
+  }
+  .awesome .col-md-4{
+    width: 100%;
+    margin-bottom:30px;
+  }
+  .awesome .col-md-4:last-child{
+    margin-bottom:0px;
+  }
+  .awesome .content p {
+    line-height: 30px;
+    width: 60%;
+    margin: auto;
+  }
+  .pricing {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .pricing-table-list {
+    margin-top: 40px;
+  }
+  .pricing .col-md-4 {
+    padding-left:2px;
+    padding-right:2px;
+  }
+  .testimonial {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .testimonial .m-60 {
+    margin-top: 40px;
+  }
+  .testimonial .review {
+    margin: 0px 0px;
+  }
+  .review .corner{
+    left:20px;
+  }
+  .user {
+    margin-top: 40px;
+  }
+  .contact {
+    width: 100%;
+    padding: 60px 0px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+
+  .banner{
+    height:80vh;
+  }
+  .banner-text{
+    height:80vh;
+  }
+  .banner-text p{
+    width:100%;
+  }
+  .banner-form {
+    height:80vh;
+  }
+  .banner-form .card {
+    margin-left: 20px;
+  }
+  .social-media .col-md-8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-media .icon ul li {
+    margin-left: 25px;
+  }
+  .icon ul li a {
+    font-size: 40px;
+  }
+  .service {
+    padding: 60px 0;
+  }
+  .service h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .service p {
+    width: 100%;
+  }
+  .sub-list {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .sub-list .row {
+    flex-direction: column;
+  }
+  .sub-list .col-md-6 {
+    width: 100%;
+  }
+  .sub-img {
+    justify-content: center;
+    display: flex;
+  }
+  .sub-list .details p {
+    width: 100%;
+  }
+  .info .row {
+    flex-direction: row;
+  }
+  .info .row .col-2 {
+    text-align:right;
+  }
+  .sub-list .info p {
+    width: 100%;
+  }
+  .standard-pic {
+    padding: 60px 0px;
+  }
+  .standard-pic p {
+    width: 100%;
+  }
+ .standard-pic .standard-pic-img {
+    display: flex;
+    align-items: center;
+  }
+  .awesome {
+    padding: 60px 0px;
+  }
+  .title h2{
+    font-size:30px;
+  }
+  .awesome .m-60{
+    margin-top:40px;
+  }
+  .awesome .col-md-4{
+    width: 100%;
+    margin-bottom:30px;
+  }
+  .awesome .col-md-4:last-child{
+    margin-bottom:0px;
+  }
+  .awesome .content p {
+    line-height: 30px;
+    width: 60%;
+    margin: auto;
+  }
+  .pricing {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .pricing-table-list {
+    margin-top: 40px;
+  }
+  .pricing .col-md-4 {
+    padding-left:2px;
+    padding-right:2px;
+  }
+  .testimonial {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .testimonial .m-60 {
+    margin-top: 40px;
+  }
+  .testimonial .review {
+    margin: 0px 0px;
+  }
+  .review .corner{
+    left:20px;
+  }
+  .user {
+    margin-top: 40px;
+  }
+  .contact {
+    width: 100%;
+    padding: 60px 0px;
+  }
+  
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 521px to 767px
+*/
+
+@media (min-width: 521px) and (max-width: 767px) {
+  
+  /* CSS */
+
+  .banner{
+    height:auto;
+  }
+  .banner-text {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .banner-text h1{
+    width:100%;
+  }
+  .banner-text .line {
+    margin: auto;
+  }
+  .banner-text p {
+    width: 100%;
+    color: #fff;
+  }
+  .banner-form {
+    height: 100vh;
+    padding-bottom:20px;
+  }
+  .banner-form .card {
+   margin-left:0px;
+  }
+  .social-media {
+    text-align: center;
+  }
+   .social-media .col-md-8 {
+    margin-top: 20px;
+  }
+   .social-media ul {
+    padding-left:0px;
+  }
+   .social-media .icon ul li {
+    margin-left: 33px;
+  }
+  .service {
+    text-align: center;
+    padding: 70px 0px;
+  }
+  .service {
+    text-align: center;
+  }
+  .service ul li {
+    display: inline-block;
+   }
+  .tab-1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius:0px;
+   }
+   .tab-3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+   }
+  .service .col-md-4 {
+    justify-content: center;
+   }
+   .service .col-md-6 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+   }
+   .service p {
+    width: 100%;
+   }
+   .sub-list {
+    padding: 70px 0;
+    text-align:center;
+   }
+    .sub-list .details .line {
+     margin: 20px auto;
+   }
+    .sub-list .details p{
+     width:100%;
+   }
+    .info .col-2 {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+    .info .col-10{
+     width:100%;
+   }
+    .sub-list .info p {
+     width: 100%;
+   }
+     .standard-pic {
+     padding: 60px 0px;
+     text-align:center;
+   }
+   .standard-pic .line {
+    margin: 20px auto;
+   }
+   .standard-pic p {
+    width: 100%;
+   }
+   .standard-pic .col-md-6:first-child{
+    margin-bottom:30px;
+   }
+   .awesome {
+    padding: 70px 0px;
+   }
+   .awesome .m-60 {
+    margin-top: 50px;
+   }
+    .awesome .col-md-4 {
+    margin-bottom: 20px;
+   }
+   .awesome .col-md-4:last-child{
+    margin-bottom:0px;
+   }
+   .awesome .content p {
+    width: 90%;
+    margin: auto;
+   }
+   .pricing-table-list {
+    margin-top: 50px;
+   }
+   .pricing .col-md-4{
+    margin-bottom:20px;
+   }
+   .pricing .col-md-4:last-child{
+    margin-bottom:0px;
+   }
+   .testimonial {
+    padding: 70px 0;
+   }
+   .title h2 {
+    font-size: 32px;
+   }
+   .testimonial {
+    padding: 70px 0;
+    text-align: center;
+   }
+   .testimonial .m-60 {
+    margin-top: 50px;
+   }
+   .review .corner {
+    left: 47%;
+   }
+   .contact {
+    padding: 70px 0px;
+   }
+   .contact form textarea {
+    width: 100%;
+    margin-left: 0px;
+   }
+  
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 520px
+*/
+
+@media (min-width: 320px) and (max-width: 520px) {
+  
+  /* CSS */
+  .banner{
+  	height:auto;
+  }
+  .banner-text{
+  	text-align:center;
+  	height:100vh;
+  }
+  .banner-text h1{
+  	margin: 20px auto;
+  	font-size: 34px;
+  }
+  .banner-text .line {
+   margin:auto;
+  }
+  .banner-text p{
+  	margin: 20px auto;
+  	width:100%;
+  	color:#fff;
+  }
+  .banner-form {
+    height: 75vh;
+  }
+  .banner-form .card {
+    margin-left:0;
+  }
+  .social-media .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .social-media .col-md-8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .icon ul{
+  	padding-left:0px;
+  }
+  .icon ul li a {
+    font-size: 30px;
+  }
+  .social-media .icon ul li{
+    margin-left: 10px;
+  }
+  .service {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .service .col-md-2 {
+    padding-left: 15px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .service ul li{
+  	display:inline-block;
+  }
+  .service ul li {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+   .tab-1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius:0px;
+   }
+   .tab-3 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+   }
+   .service h4 {
+   	margin-bottom:20px;
+   }
+   .service p{
+   	width:100%;
+   }
+   .service button{
+   	margin-top:20px;
+   	margin-bottom:40px;
+   }
+   .service .col-md-4 {
+    justify-content: center;
+   }
+   .sub-list {
+     padding: 60px 0;
+     text-align:center;
+   }
+    .sub-list .details .line {
+     margin: 20px auto;
+   }
+    .sub-list .details p{
+     width:100%;
+   }
+    .info .col-2 {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+    .info .col-10{
+     width:100%;
+   }
+    .sub-list .info p {
+     width: 100%;
+   }
+    .standard-pic {
+     padding: 60px 0px;
+     text-align:center;
+   }
+   .standard-pic .line {
+    margin: 20px auto;
+   }
+   .standard-pic p {
+    width: 100%;
+   }
+   .standard-pic .col-md-6:first-child{
+   	margin-bottom:30px;
+   }
+   .awesome {
+    padding: 60px 0px;
+   }
+   .title h2{
+    font-weight:600;
+    font-size:26px;
+   }
+   .awesome .m-60 {
+    margin-top: 30px;
+    }
+   .awesome .content i {
+    font-size: 25px;
+    color: #ff8b38;
+    height: 80px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+    width: 80px;
+   }
+   .awesome .col-md-4 {
+    margin-bottom: 20px;
+   }
+   .awesome .col-md-4:last-child{
+    margin-bottom:0px;
+   }
+   .awesome .col-md-4:last-child P{
+    margin-bottom:0px;
+   }
+   .pricing {
+    padding: 60px 0;
+   }
+   .pricing-table-list {
+    margin-top: 30px;
+   }
+   .pricing .col-md-4{
+    margin-bottom:20px;
+   }
+   .pricing .col-md-4:last-child{
+    margin-bottom:0px;
+   }
+   .testimonial {
+    padding: 60px 0;
+   }
+   .testimonial .m-60 {
+    margin-top: 40px;
+   }
+   .testimonial .col-md-4{
+    margin-bottom:20px; 
+   }
+  .testimonial .col-md-4:last-child{
+    margin-bottom:0px; 
+   }
+   .review .corner {
+    left: 45%;
+   }
+   .user {
+    margin-top: 35px;
+   }
+   .user .col-md-4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px !important;
+   }
+    .user .col-md-8 {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+   }
+   .title .line {
+    margin: 20px auto;
+   }
+   .axure {
+    width: 100%;
+   }
+    .contact {
+    padding:60px 0px;
+   }
+   .contact form textarea{
+    margin-left:0px;
+    width:100%;
+   }
+   .contact form {
+    margin-top: 30px;
+   }
+
+}
