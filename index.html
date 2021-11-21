@@ -1,535 +1,726 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!--CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- RESPONSIVE CSS -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <title>AXIT</title>
-  </head>
-  <body>
-    <!-- HEADER SECTION CODE START FROM HERE -->
-    <header id="header">
-    	<div class="container">
-		   <nav class="navbar navbar-expand-lg navbar-light">
-			   <div class="container-fluid">
-			    	<a class="navbar-brand" href="#header"><img src="img/logo.png" alt="logo"></a>
-			   		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    	<span class="navbar-toggler-icon"></span>
-			        </button>
-			        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			        	<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-			         		<li class="nav-item">
-			          			<a class="nav-link" aria-current="page" href="#features">Features</a>
-			         		</li>
-			         		<li class="nav-item">
-			          			<a class="nav-link" aria-current="page" href="#about">About</a>
-			         		</li>
-			         		<li class="nav-item">
-			          			<a class="nav-link" aria-current="page" href="#Pricing">Pricing</a>
-			         		</li>
-			         		<li class="nav-item">
-			          			<a class="nav-link" aria-current="page" href="#testimonials">Reviews</a>
-			         		</li>
-			         		<li class="nav-item">
-			          			<a class="nav-link" aria-current="page" href="#contact">Contact</a>
-			         		</li>
-			      		</ul>
-			     	</div>
-			   </div>
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="website author name">
+		<meta name="description" content="website description">
+		<meta name="keywords" content="website keyword">
+		<title>Axit</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/png" href="assests/images/globe.png">
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="assests/fonts/fonts.css">
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- Icons -->
+		<link rel="stylesheet" type="text/css" href="assests/icons/icons.css">
+		<!-- Css Files -->
+		<link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
+	</head>
+
+	<body onload="load()">
+		
+		<!--
+		====================
+		Start Preloader 
+		====================
+		-->
+
+		<div class="preloader">
+			<img src="assests/images/Dual Ring-2.9s-124px.gif" alt="preloader-img">
+		</div>
+
+		<!--
+		====================
+		End Preloader 
+		====================
+		-->
+
+		<!-- 
+		========================================
+		Start Header Section
+		========================================
+		-->
+		<header class="header overflow-hidden">
+			<!-- Navbar -->
+			<nav class="nav bg-color-00 py-20 position-relative header-sticky px-xs-15" id="navbar">
+				<div class="container">
+					<div class="logo-menu d-flex justify-content-between">
+						<div class="logo">
+							<a href=""><img src="assests/images/logo.png" alt="logo" class="img-fluid"></a>
+						</div>
+						<div class="mobilemenu-icon">
+						<ul>
+							<li></li>
+							<li></li> 
+							<li></li>
+						</ul>
+						</div>
+						<div class="mobile-menu">
+							<ul>
+								<li class="menu-link"><a href="#">Features</a></li>
+								<li class="menu-link"><a href="#" >About</a></li>
+								<li class="menu-link"><a href="#" >Pricing</a></li>
+								<li class="menu-link"><a href="#" >Reviews</a></li>
+								<li class="menu-link"><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<!-- <div class="main-menu">
+							<ul>
+								<li class="d-inline-block me-40"><a href="#" class="font-os-600 font-size-14 text-color-ff transition-3s-ease">Features</a></li>
+								<li class="d-inline-block me-40"><a href="#" class="font-os-600 font-size-14 text-color-ff transition-3s-ease">About</a></li>
+								<li class="d-inline-block me-40"><a href="#" class="font-os-600 font-size-14 text-color-ff transition-3s-ease">Pricing</a></li>
+								<li class="d-inline-block me-40"><a href="#" class="font-os-600 font-size-14 text-color-ff transition-3s-ease">Reviews</a></li>
+								<li class="d-inline-block"><a href="#" class="font-os-600 font-size-14 text-color-ff transition-3s-ease">Contact</a></li>
+							</ul>
+						</div> -->
+					</div>
+				</div>
 			</nav>
-    	</div>
-    </header>
-    <!-- HEADER SECTION CODE END FROM HERE -->
-
-    <!-- BANNER SECTION CODE START FROM HERE -->
-    <section class="banner">
-    	<div class="container">
-    	    <div class="row">
-    			<div class="col-md-6">
-    				<!-- LEFT SIDE -->
-    				<div class="banner-text">
-    					<img src="img/big-logo.png" alt="big-logo">
-    					<h1>MODERN AXURE TEMPLATE
-						FOR BEAUTIFUL PROTOTYPES</h1>
-    					<div class="line"></div>
-    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-						euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-						accumsan et viverra justo commodo.</p>
-    					<button>Download</button>
-    				</div>
-    			</div>
-    			<!-- RIGHT SIDE -->
-    			<div class="col-md-6">
-    				<div class="banner-form">
-    					<form>
-    						<div class="card">
-    							<div class="card-header">
-    								<h2>Try Your <span>FREE</span> Trial Today</h2>
-    							</div>
-    							<div class="card-body">
-    								<input type="text" name="name" placeholder="Name">
-    								<input type="email" name="email" placeholder="Email">
-    								<input type="password" name="password" placeholder="Password">
-    							</div>
-    							<div class="card-footer">
-    								<input type="submit" value="Get Started">
-    							</div>
-    						</div>
-    					</form>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <!-- BANNER SECTION CODE END FROM HERE -->
-
-    <!-- SOCIAL MEDIA SECTION CODE START FROM HERE -->
-    <section class="social-media">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="desc">
-    					<h3>Social Media</h3>
-	    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Aenean euismod bibendum laoreet.</p>
-    				</div>
-    			</div>
-    			<div class="col-md-8">
-    				<div class="icon">
-    					<ul>
-    						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    						<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-    						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    					</ul>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <!-- SOCIAL MEDIA SECTION CODE END FROM HERE -->
-
-    <!-- SERVICE SECTION CODE START FROM HERE -->
-    <section class="service" id="features">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-2">
-					<ul>
-						<li class="tab-1">TAB-1</li>
-						<li class="tab-2">TAB-2</li>
-						<li class="tab-3">TAB-3</li>
-					</ul>
-				</div> 
-				<div class="col-md-6">
-					<div class="tab-content-1">
-                        <h4>Tabs with soft transitioning effect-1.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.</p>
-                        <button type="button">Download</button> 
-                    </div>
-                    <div class="tab-content-2">
-                        <h4>Tabs with soft transitioning effect-2.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                        penatibus et magnis dis parturient montes.</p>
-                        <button type="button">Download</button> 
-                    </div>
-                    <div class="tab-content-3">
-                        <h4>Tabs with soft transitioning effect-3.</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                        justo commodo. Proin sodales pulvinar tempor.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                        bibendum laoreet.</p>
-                        <button type="button">Download</button> 
-                    </div>
+			<!-- Banner -->
+			<div class="banner">
+				<div class="container">
+					<div class="row banner-row">
+						<div class="col-xl-6 col-lg-7">
+							<div class="banner-desc text-center text-lg-start">
+								<img src="assests/images/bannerlogo.png" alt="bannerlogo" class="img-fluid">
+								<h1 class="mt-20 mb-15 mx-auto mx-lg-0 font-raleway-400 text-uppercase font-size-36 text-color-ff">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+								<span class="line bg-color-ff"></span>
+								<p class="mt-25 mx-auto mx-lg-0 font-raleway-300 font-size-16 text-color-ff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+								euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+								accumsan et viverra justo commodo.</p>
+								<a href="#" class="font-os-600 font-size-15 text-color-ff">Download</a>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-5 d-flex justify-content-end">
+							<div class="banner-form mx-auto mx-lg-0">
+								<div class="form-top pb-10 bg-color-f4 text-center">
+									<span class="font-os-700 font-size-20 font-color-00">Try Your <span class="text-color-ff8">FREE</span> Trial Today</span>
+								</div>
+								<div class="banner-form-content">
+									<form>
+										<div class="form-input pb-50 pt-30 bg-color-ff">
+											<input type="text" name="name" placeholder="Name" autocomplete="off" required>
+											<input type="email" name="email" placeholder="Email" autocomplete="off" required>
+											<input type="password" name="password" placeholder="Password" required>
+										</div>
+										<input type="submit" value="Get Started">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-                    <img src="img/service-1.png" alt="service-1"> 
+			</div>
+		</header>
+		<!-- 
+		========================================
+		End Header Section
+		========================================
+		-->
+
+			<main>
+
+			<!-- 
+			========================================
+			Start Social Media Section
+			========================================
+			-->
+			<section class="social-media overflow-hidden">
+				<div class="container">	
+					<div class="row social-media-row">
+                    	<div class="col-md-5">
+                    		<div class="social-media-text text-center text-md-start">
+                    			<h2 >Social Media</h2>
+                    			<p class="font-os-400 mt-05 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                    		</div>	
+                    	</div>
+                    	<div class="col-md-7 d-flex align-items-center justify-content-center justify-content-lg-end">
+                    		<ul class="social-media-list text-end">
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-facebook-f font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-twitter font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-google-plus-g font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-pinterest font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-instagram font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fab fa-stumbleupon font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    			<li class="d-inline-block"><a href="#"><i class="fas fa-rss font-size-48 text-color-cc transition-3s-ease"></i></a></li>
+                    		</ul>
+                    	</div>
+					</div>	
+				</div>	
+			</section>	
+			<!-- 
+			========================================
+			End Social Media Section
+			========================================
+			-->
+
+			<!-- 
+			========================================
+			Start Tab Section
+			========================================
+			-->
+			<section class="tab-section bg-color-f5 pb-85 overflow-hidden">
+				<div class="container">
+					<div class="row tab-row">
+						<div class="col-lg-2 col-sm-12">
+							<div class="tab-btn d-flex flex-lg-column justify-content-center">
+								<button id="tab1" class="font-os-700 font-size-15 text-color-ff bg-color-33 acitve-btn d-block transition-3s-ease-in-out" onclick="opencontent1()">TAB 1</button>
+								<button id="tab2" onclick="opencontent2()" class="font-os-700 font-size-15 text-color-ff bg-color-33 d-block transition-3s-ease-in-out">TAB 2</button>
+								<button id="tab3" onclick="opencontent3()" class="font-os-700 font-size-15 text-color-ff bg-color-33 d-block transition-3s-ease-in-out">TAB 3</button>
+							</div>
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="tab-wrapper">
+								<div class="tab-item" id="tab-item1">
+									<div class="tab-content-row ps-30 d-flex justify-content-between flex-wrap">
+										<div class="tab-content-text text-center text-md-start">
+											<h3 class="font-os-700 font-size-20 text-color-00">Tabs with soft transitioning effect.</h3>
+											<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+											justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+											penatibus et magnis dis parturient montes.
+
+											<span class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet.</span></p>
+											<a href="#" class="transition-3s-ease-in-out px-25 mt-45 font-os-600 bg-color-ff8 font-size-15 text-color-ff">Download</a>
+										</div>
+										<div class="tab-content-img d-flex align-items-center justify-content-center">
+											<img src="assests/images/tab-img.png" alt="tab-img" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="tab-item" id="tab-item2">
+									<div class="tab-content-row ps-30 d-flex justify-content-between flex-wrap">
+										<div class="tab-content-text text-center text-md-start">
+											<h3 class="font-os-700 font-size-20 text-color-00">Tabs with soft transitioning effect.</h3>
+											<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+											justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+											penatibus et magnis dis parturient montes.
+
+											<span class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet.</span></p>
+											<a href="#" class="transition-3s-ease-in-out px-25 mt-45 font-os-600 bg-color-ff8 font-size-15 text-color-ff">Download</a>
+										</div>
+										<div class="tab-content-img d-flex align-items-center justify-content-center">
+											<img src="assests/images/tab-img.png" alt="tab-img" class="img-fluid">
+										</div>
+									</div>
+								</div>
+								<div class="tab-item" id="tab-item3">
+									<div class="tab-content-row ps-30 d-flex justify-content-between flex-wrap">
+										<div class="tab-content-text text-center text-md-start">
+											<h3 class="font-os-700 font-size-20 text-color-00">Tabs with soft transitioning effect.</h3>
+											<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+											justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+											penatibus et magnis dis parturient montes.
+
+											<span class="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+											bibendum laoreet.</span></p>
+											<a href="#" class="transition-3s-ease-in-out px-25 mt-45 font-os-600 bg-color-ff8 font-size-15 text-color-ff">Download</a>
+										</div>
+										<div class="tab-content-img d-flex align-items-center justify-content-center">
+											<img src="assests/images/tab-img.png" alt="tab-img" class="img-fluid">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-    		</div>		
-    	</div>
-    </section>
-     <!-- SERVICE SECTION CODE START FROM HERE -->
+			</section>
+			<!-- 
+			========================================
+			End Tab Section
+			========================================
+			-->
 
-    <!-- SUB LIST SECTION CODE START FROM HERE -->
-    <section class="sub-list">
-    	<div class="container">
-	    	<div class="row">
-	    		<div class="col-md-6 sub-img">
-	    			<img src="img/sub-list.png" class="img-fluid" alt="sub-list">
-	    		</div>
-	    		<div class="col-md-6">
-	    			<div class="details">
-		    			<h3>Sub list section</h3>
-		    			<div class="line"></div>
-		    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-						euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
-						accumsan et viverra justo commodo.</p>
-	    			</div>
-	    			<div class="info">
-	    				<div class="row info-1">
-	    					<div class="col-2">
-	    						<i class="fas fa-cloud-download-alt"></i>
-	    					</div>
-	    					<div class="col-10">
-	    						<h5>Title</h5>
-	    						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Aenean euismod bibendum laoreet.</p>
-	    					</div>
-	    				</div>
-	    				<div class="row">
-	    					<div class="col-2">
-	    						<i class="fas fa-cloud-download-alt"></i>
-	    					</div>
-	    					<div class="col-10">
-	    						<h5>Title</h5>
-	    						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Aenean euismod bibendum laoreet.</p>
-	    					</div>
-	    				</div>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </div>
-    </section>
-    <!-- SUB LIST SECTION CODE END FROM HERE -->
-
-    <!-- STANDARD PICTURE SECTION CODE START FROM HERE -->
-    <section class="standard-pic">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6">
-    				<h3>Standard Picture Section</h3>
-		    		<div class="line"></div>
-		    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-					euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
-					et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
-					natoque penatibus et magnis dis parturient montes.</p>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-					bibendum laoreet.</p>
-    			</div>	
-    			<div class="col-md-6 standard-pic-img">
-    				<img src="img/standard-pic.png" class="img-fluid" alt="standard-pic">
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <!-- STANDARD PICTURE SECTION CODE END FROM HERE -->
-
-    <!-- AWESOME SECTION CODE START FROM HERE -->
-    <section class="awesome" id="about">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-12">
-    				<div class="title">
-    					<h2>WHY THIS IS AWESOME</h2>
-    					<div class="line"></div>
-    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row m-60">
-    			<div class="col-md-4">
-    				<div class="content">
-    					<i class="fas fa-cloud-download-alt"></i>
-    					<h3>Thoughtful Design</h3>
-    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-						elit. Aenean euismod bibendum laoreet. Proin gravida 
-						dolor sit amet lacus accumsan et viverra.</p>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="content">
-    					<i class="fas fa-cloud-download-alt"></i>
-    					<h3>Well Crafted</h3>
-    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-						elit. Aenean euismod bibendum laoreet. Proin gravida 
-						dolor sit amet lacus accumsan et viverra.</p>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="content">
-    					<i class="fas fa-cloud-download-alt"></i>
-    					<h3>Easy to Customize</h3>
-    					<p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-						elit. Aenean euismod bibendum laoreet. Proin gravida 
-						dolor sit amet lacus accumsan et viverra.</p>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <!-- AWESOME SECTION CODE END FROM HERE -->
-
-    <!-- PRICING SECTION CODE START FROM HERE -->
-    <section class="pricing" id="Pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>PRICING OPTIONS</h2>
-                        <div class="line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pricing-table-list">
-                <div class="col-md-4">
-                    <div class="table-1">
-                        <div class="pricing-cat">
-                            <p>Basic</p>
-                        </div>
-                        <div class="pricing-body">
-                            <h1>$<span>0</span></h1>
-                            <p>Free for Life</p>
-                        </div>
-                        <div class="services">
-                           <ul>
-                               <li>1 gb of space</li>
-                               <li>10 gb of bandwidth</li>
-                               <li>3 websites</li>
-                               <li>Basic Customization</li>
-                               <li>wordpress integration</li>
-                               <li>email support</li>
-                           </ul> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="table-1 midddle">
-                        <div class="pricing-cat">
-                            <p>Professional</p>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="special">
-                                <h1>$<span>19</span></h1>
-                                <p>Monthly Payment</p>
-                            </div>
-                            <div class="popular">
-                                <h4>OUR MOST POPULAR</h4>
-                            </div>
-                        </div>
-                        <div class="services">
-                           <ul>
-                               <li>5 gb of space</li>
-                               <li>50 gb of bandwidth</li>
-                               <li>12 websites</li>
-                               <li>Advanced Customization</li>
-                               <li>wordpress integration</li>
-                               <li>email support</li>
-                           </ul> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="table-1">
-                        <div class="pricing-cat">
-                            <p>Enterprise</p>
-                        </div>
-                        <div class="pricing-body">
-                            <h1>$<span>70</span></h1>
-                            <p>Monthly Payment</p>
-                        </div>
-                        <div class="services">
-                           <ul>
-                               <li>Unlimited space</li>
-                               <li>unlimited bandwidth</li>
-                               <li>100 websites</li>
-                               <li>Advanced Customization</li>
-                               <li>wordpress integration</li>
-                               <li>24/7 customer support</li>
-                           </ul> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- PRICING SECTION CODE END FROM HERE -->
+			<!-- 
+			========================================
+			Start Sub List Section
+			========================================
+			-->
+			<section class="sub-list pb-75 overflow-hidden">
+				<div class="container">
+					<div class="row sub-list-row">
+						<div class="col-lg-5 d-flex justify-content-center align-items-center align-items-xl-start">
+							<div class="sub-list-img">
+								<img src="assests/images/sub-list-img.png" class="img-fluid" alt="sub-list-img">
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-10 mx-auto mx-lg-0">
+							<div class="sub-list-desc text-center text-md-start mb-40">
+								<h2 class="font-os-700 font-size-20 text-color-21">Sub list section</h2>
+								<span class="hr-line"></span>
+								<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+								euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+								accumsan et viverra justo commodo.</p>
+							</div>
+							<div class="d-flex flex-column flex-sm-row mb-35 ">
+								<div class="icon d-flex justify-content-center align-items-center align-items-lg-start">
+									<a href="#" class="d-flex justify-content-center align-items-center"><i class="text-color-ff8 text-co fas fa-cloud-upload-alt"></i></a>
+								</div>
+								<div class="text ms-30 text-center text-sm-start">
+									<span class="font-os-600 mb-05 font-size-14 text-color-21">Title</span>
+									<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Aenean euismod bibendum laoreet.</p>
+								</div>
+							</div>
+							<div class="d-flex flex-column flex-sm-row">
+								<div class="icon d-flex justify-content-center align-items-center align-items-lg-start">
+									<a href="#" class="d-flex justify-content-center align-items-center"><i class="text-color-ff8 text-co fas fa-cloud-upload-alt"></i></a>
+								</div>
+								<div class="text ms-30 text-center text-sm-start">
+									<span class="font-os-600 mb-05 font-size-14 text-color-21">Title</span>
+									<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Aenean euismod bibendum laoreet. Proin gravida dolor 
+									sit amet lacus accumsan et viverra justo commodo.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Sub List Section
+			========================================
+			-->
 
 
-    <!-- TESTIMONIAL SECTION CODE START FROM HERE -->
-    <section class="testimonial" id="testimonials">
-       <div class="container">
-             <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-                        <div class="line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="row m-60">
-                <div class="col-md-4">
-                    <div class="review">
-                        <div class="message">
-                            <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                            <div class="corner"></div>
-                        </div>
-                        <div class="user">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/customer.png" class="img-fluid" alt="customer-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <h3>Jeremy H.</h3>
-                                    <p>Manager</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review">
-                        <div class="message">
-                            <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                            <div class="corner"></div>
-                        </div>
-                        <div class="user">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/customer.png" class="img-fluid" alt="customer">
-                                </div>
-                                <div class="col-md-8">
-                                    <h3>John S.</h3>
-                                    <p>Freelancer</p>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review">
-                        <div class="message">
-                            <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                            <div class="corner"></div>
-                        </div>
-                        <div class="user">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/customer.png" class="img-fluid" alt="customer">
-                                </div>
-                                <div class="col-md-8">
-                                    <h3>Susan W.</h3>
-                                    <p>Photographer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- TESTIMONIAL SECTION CODE END FROM HERE -->
+			<!-- 
+			========================================
+			Start Standard Picture Section
+			========================================
+			-->
+			<section class="standard-picture pt-75 pb-30 bg-color-f5 overflow-hidden">
+				<div class="container">
+					<div class="row standard-picture-row">
+						<div class="col-md-6">
+							<div class="standard-picture-desc text-center text-md-start ms-75 pt-50">
+								<h2 class="font-os-700 font-size-20 text-color-21">Standard Picture Section</h2>
+								<span class="hr-line"></span>
+								<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+								euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
+								et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
+								natoque penatibus et magnis dis parturient montes.
 
-    <!-- AXURE SECTION CODE START FROM HERE -->
-    <section class="axure">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>STYLISH AXURE DESIGN</h2>
-                        <div class="line"></div>
-                        <p>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-                        <button>Download</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- AXURE SECTION CODE END FROM HERE -->
+								<span class="mt-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+								bibendum laoreet.</span></p>
+							</div>
+						</div>
+						<div class="col-md-6 d-flex align-items-center align-items-lg-start">
+							<div class="standard-picture-img">
+								<img src="assests/images/standard-picture.png" class="img-fluid" alt="standard-picture">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Standard Picture Section
+			========================================
+			-->
 
-    <!-- CONTACT SECTION CODE START FROM HERE -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title">
-                        <h2>CONTACT US</h2>
-                        <div class="line"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-            <form>
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" name="name" placeholder="Name" class="input-1">  
-                        <input type="email" name="email" placeholder="Email"  class="input-2">
-                        <input type="text" name="name" placeholder="Subject">
-                    </div>
-                    <div class="col-md-6 input-message">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                </div>
-                <div class="row form-btn">
-                   <div class="col-md-12">
-                       <input type="submit" value="Send Message">
-                   </div> 
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- CONTACT SECTION CODE START FROM HERE -->
 
-    <!-- FOOTER SECTION CODE START FROM HERE -->
-    <footer>
-        <div class="container">
-            <div class="row">
-            <div class="col-md-12">
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
-                <p>© 2015 Axure Themes</p>
-            </div>
-        </div>
-        </div>
-    </footer>
-    <!-- FOOTER SECTION CODE END FROM HERE -->
+			<!-- 
+			========================================
+			Start Awesome Section
+			========================================
+			-->
+			<section class="awesome-section pt-100 pb-75 overflow-hidden">
+				<div class="container">
+					<div class="awesome-title text-center px-xs-15">
+						<h2 class="font-raleway-400 font-size-36 text-color-21">WHY THIS IS AWESOME</h2>
+						<span class="hr-line"></span>
+						<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="row awesome-row mt-65">
+						<div class="col-lg-4 col-md-6">
+							<div class="awesome-item text-center">
+								<span class="d-flex justify-content-center align-items-center"><i class="far fa-lightbulb font-size-32 text-color-ff8"></i></span>
+								<h3 class="mt-25 mb-25 font-os-700 font-size-20 text-color-33">Thoughtful Design</h3>
+								<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing 
+								elit. Aenean euismod bibendum laoreet. Proin gravida 
+								dolor sit amet lacus accumsan et viverra.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="awesome-item text-center">
+								<span class="d-flex justify-content-center align-items-center"><i class="far fa-keyboard font-size-32 text-color-ff8"></i></span>
+								<h3 class="mt-25 mb-25 font-os-700 font-size-20 text-color-33">Well Crafted</h3>
+								<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing 
+								elit. Aenean euismod bibendum laoreet. Proin gravida 
+								dolor sit amet lacus accumsan et viverra.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mx-auto mx-lg-0">
+							<div class="awesome-item text-center">
+								<span class="d-flex justify-content-center align-items-center"><i class="fa fa-bolt font-size-32 text-color-ff8"></i></span>
+								<h3 class="mt-25 mb-25 font-os-700 font-size-20 text-color-33">Easy to Customize</h3>
+								<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing 
+								elit. Aenean euismod bibendum laoreet. Proin gravida 
+								dolor sit amet lacus accumsan et viverra.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Awesome Section
+			========================================
+			-->
 
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
-    <!-- JQUERY LINK -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-   </body>
+			<!-- 
+			========================================
+			Start Pricing Section
+			========================================
+			-->
+			<section class="pricing-section pt-100 pb-65 bg-color-f5 overflow-hidden">
+				<div class="container">
+					<div class="pricing-title text-center">
+						<h2 class="font-raleway-400 font-size-36 text-color-21">PRICING OPTIONS</h2>
+						<span class="hr-line"></span>
+						<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="row pricing-row mt-80 align-items-end">
+						<div class="col-md-4">
+							<div class="pricing-box">
+								<div class="pricing-head text-center bg-color-33">
+									<h3 class="font-os-700 font-size-20 text-color-ff">Basic</h3>
+								</div>
+								<div class="pricing-body pb-15 pt-25 text-center bg-color-33">
+									<h4><span class="font-raleway-700 font-size-35 text-color-ff">$</span><span class="font-raleway-700 font-size-94 text-color-ff">0</span></h4>
+									<p class="font-os-600 font-size-14 text-color-99 fst-italic">Free for Life</p>
+								</div>
+								<div class="pricing-footer">
+									<ul class="bg-color-ff">
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">1 gb of space</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">10 gb of bandwidth</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">3 websites</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">Basic Customization</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">wordpress integration</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">email support</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pricing-box professional">
+								<div class="pricing-head text-center bg-color-33">
+									<h3 class="font-os-700 font-size-20 text-color-ff">Professional</h3>
+								</div>
+								<div class="pricing-body pt-25 text-center bg-color-33">
+									<h4><span class="font-raleway-700 font-size-35 text-color-ff">$</span><span class="font-raleway-700 font-size-94 text-color-ff">19</span></h4>
+									<p class="font-os-600 mb-15 font-size-14 text-color-99 fst-italic">Monthly Payment</p>
+									<div class="popular bg-color-ff8">
+										<h5 class="font-os-700 font-size-14 text-color-ff">OUR MOST POPULAR</h5>
+									</div>
+								</div>
+								<div class="pricing-footer">
+									<ul class="bg-color-ff">
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">5 gb of space</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">50 gb of bandwidth</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">12 websites</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">Advanced Customization</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">wordpress integration</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">email support</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="pricing-box">
+								<div class="pricing-head text-center bg-color-33">
+									<h3 class="font-os-700 font-size-20 text-color-ff">Enterprise</h3>
+								</div>
+								<div class="pricing-body pb-15 pt-25 text-center bg-color-33">
+									<h4><span class="font-raleway-700 font-size-35 text-color-ff">$</span><span class="font-raleway-700 font-size-94 text-color-ff">70</span></h4>
+									<p class="font-os-600 font-size-14 text-color-99 fst-italic">Monthly Payment</p>
+								</div>
+								<div class="pricing-footer">
+									<ul class="bg-color-ff">
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">Unlimited space</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">unlimited bandwidth</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">100 websites</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">Advanced Customization</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">wordpress integration</li>
+										<li class="font-os-400 font-size-14 text-color-86 py-10 text-center text-uppercase">24/7 customer support</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Pricing Section
+			========================================
+			-->
+
+			<!-- 
+			========================================
+			Start Testimonial Section
+			========================================
+			-->
+			<section class="testimonial-section pt-100 pb-70 overflow-hidden">
+				<div class="container">
+					<div class="testimonial-title text-center px-xs-15">
+						<h2 class="font-raleway-400 font-size-36 text-color-21">WHAT OUR CUSTOMERS ARE SAYING</h2>
+						<span class="hr-line"></span>
+						<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="row testimonial-row">
+						<div class="col-lg-4 col-md-6">
+							<div class="testimonial-desc mx-auto">
+								<p class="py-20 position-relative fst-italic font-os-400 bg-color-f5 font-size-14 text-color-86">Lorem ipsum dolor sit amet, 
+								consectetur adipisicing elit. Doloribus 
+								accusamus expedita repellat similique 
+								odio aspernatur ex, architecto eaque 
+								quo suscipit.</p>
+								<div class="d-flex mt-30 me-sm-20 align-items-center">
+									<div class="person-img">
+										<img src="assests/images/testimonial-img.png" class="img-fluid" alt="testimonial-img">
+									</div>
+									<div class="designation ms-15">
+										<p class="font-os-700 font-size-20 text-color-33">John S.</p>
+										<span class="font-os-400 font-size-14 text-color-86">Manager</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="testimonial-desc mx-auto">
+								<p class="py-20 position-relative fst-italic font-os-400 bg-color-f5 font-size-14 text-color-86">Lorem ipsum dolor sit amet, 
+								consectetur adipisicing elit. Doloribus 
+								accusamus expedita repellat similique 
+								odio aspernatur ex, architecto eaque 
+								quo suscipit.</p>
+								<div class="d-flex me-sm-20 mt-30 align-items-center">
+									<div class="person-img">
+										<img src="assests/images/testimonial-img.png" class="img-fluid" alt="testimonial-img">
+									</div>
+									<div class="designation ms-15">
+										<p class="font-os-700 font-size-20 text-color-33">John S.</p>
+										<span class="font-os-400 font-size-14 text-color-86">Freelancer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mx-auto mx-lg-0">
+							<div class="testimonial-desc mx-auto">
+								<p class="py-20 position-relative fst-italic font-os-400 bg-color-f5 font-size-14 text-color-86">Lorem ipsum dolor sit amet, 
+								consectetur adipisicing elit. Doloribus 
+								accusamus expedita repellat similique 
+								odio aspernatur ex, architecto eaque 
+								quo suscipit.</p>
+								<div class="d-flex me-sm-20 mt-30 align-items-center">
+									<div class="person-img">
+										<img src="assests/images/testimonial-img.png" class="img-fluid" alt="testimonial-img">
+									</div>
+									<div class="designation ms-15">
+										<p class="font-os-700 font-size-20 text-color-33">John S.</p>
+										<span class="font-os-400 font-size-14 text-color-86">Photographer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Testimonial Section
+			========================================
+			-->
+
+			<!-- 
+			========================================
+			Start Axure Section
+			========================================
+			-->
+			<section class="axure-section overflow-hidden px-xs-15">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="axure-details text-center">
+								<h2 class="font-raleway-400 font-size-36 text-color-ff">STYLISH AXURE DESIGN</h2>
+								<span class="hr-line"></span>
+								<p class="font-raleway-300 font-size-16 text-color-ff">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+								<a href="#" class="mt-30 font-os-600 font-size-15 text-color-ff">Download</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Axure Section
+			========================================
+			-->
+
+			<!-- 
+			========================================
+			Start Contact Section
+			========================================
+			-->
+			<section class="contact-section pt-100 pb-80 overflow-hidden">
+				<div class="container">
+					<div class="contact-title text-center px-xs-15">
+						<h2 class="font-raleway-400 font-size-36 text-color-21">CONTACT US</h2>
+						<span class="hr-line"></span>
+						<p class="font-os-400 font-size-14 text-color-86">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<form class="mt-90">
+						<div class="row contact-row">
+							<div class="col-md-6 mb-sm-30">
+								<div class="name-email mx-10">
+									<input type="text" name="name" placeholder="Name" autocomplete="off">
+									<input type="email" name="email" placeholder="Email" autocomplete="off" class="mt-30">
+									<input type="text" name="subject" placeholder="Subject" autocomplete="off" class="mt-30">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="textarea mx-10">
+									<textarea placeholder="Message" autocomplete="off"></textarea>
+								</div>
+							</div>
+							<div class="contact-btn text-center mt-35">
+								<a href="#" class="bg-color-ff9 font-os-600 font-size-15 text-color-ff transition-3s-ease-in-out">Send Message</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- 
+			========================================
+			End Contact Section
+			========================================
+			-->
+
+			</main>
+
+		<!-- 
+		========================================
+		Start Footer Section
+		========================================
+		-->
+		<footer class="bg-color-00 pt-20 pb-15 overflow-hidden px-xs-15">
+			<div class="container">
+				<ul class="social-icon text-center">
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-facebook-f font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-twitter font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-google-plus-g font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-pinterest font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-instagram font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fab fa-stumbleupon font-size-24 text-color-ff"></i></a></li>
+					<li class="d-inline-block"><a href="#"><i class="transition-3s-ease fas fa-rss font-size-24 text-color-ff"></i></a></li>
+				</ul>
+				<p class="mt-10 text-center font-os-400 font-size-12 text-color-ff">© 2015 Axure Themes</p>
+			</div>
+		</footer>
+		<!-- 
+		========================================
+		End Footer Section
+		========================================
+		-->
+
+		<!--
+		====================
+		Start Scroll to top 
+		====================
+		-->
+
+		<div>
+			<a href="#" class="scroll-top hvr-bob"><span class="icon-arrow-up-solid"></span></a>
+		</div>
+
+		<!--
+		====================
+		End Scroll to top
+		====================
+		-->
+
+		<!-- Js Files -->
+		<script src="assests/js/jquery.min.js"></script>
+		<script src="assests/js/bootstrap.min.js"></script>
+		<script src="assests/js/main.js"></script>
+		<script>
+			window.onscroll = function() {myFunction()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+				if(window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+				} else {
+					navbar.classList.remove("sticky");
+				}
+			}
+			// Tab Js
+			var tab1 = document.getElementById("tab1");
+			var tab2 = document.getElementById("tab2");
+			var tab3 = document.getElementById("tab3");
+			var tabitem1 = document.getElementById("tab-item1");
+			var tabitem2 = document.getElementById("tab-item2");
+			var tabitem3 = document.getElementById("tab-item3");
+
+			function opencontent1() {
+				tab1.classList.add("acitve-btn");
+				tab2.classList.remove("acitve-btn");
+				tab3.classList.remove("acitve-btn");
+				tabitem1.style.visibility = "visible";
+				tabitem2.style.visibility = "hidden";
+				tabitem3.style.visibility = "hidden";
+				tabitem1.style.opacity = "1";
+				tabitem2.style.opacity = "0";
+				tabitem3.style.opacity = "0";
+				tabitem1.style.transition = ".7s";
+				tabitem2.style.transition = "0s";
+				tabitem3.style.transition = "0s";
+			}
+
+			function opencontent2() {
+				tab1.classList.remove("acitve-btn");
+				tab2.classList.add("acitve-btn");
+				tab3.classList.remove("acitve-btn");
+				tabitem1.style.visibility = "hidden";
+				tabitem2.style.visibility = "visible";
+				tabitem3.style.visibility = "hidden";
+				tabitem1.style.opacity = "0";
+				tabitem2.style.opacity = "1";
+				tabitem3.style.opacity = "0";
+				tabitem1.style.transition = "0s";
+				tabitem2.style.transition = ".7s";
+				tabitem3.style.transition = "0s";
+			}
+
+			function opencontent3() {
+				tab1.classList.remove("acitve-btn");
+				tab2.classList.remove("acitve-btn");
+				tab3.classList.add("acitve-btn");
+				tabitem1.style.visibility = "hidden";
+				tabitem2.style.visibility = "hidden";
+				tabitem3.style.visibility = "visible";
+				tabitem1.style.opacity = "0";
+				tabitem2.style.opacity = "0";
+				tabitem3.style.opacity = "1";
+				tabitem1.style.transition = "0s";
+				tabitem2.style.transition = "0s";
+				tabitem3.style.transition = ".7s";
+			}
+		</script>
+	</body>
 </html>
