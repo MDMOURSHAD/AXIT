@@ -3,12 +3,13 @@ function load() {
 	var loading = document.getElementsByClassName('preloader');
 	loading[0].style.display = "none";
 }
-$(document).ready(function() {
+
+$(document).ready(function () {
 
 	/*-- Menu Sticky --*/
 	var windows = $(window);
 	var sticky = $('.header-sticky')
-	windows.on('scroll', function() {
+	windows.on('scroll', function () {
 		var scroll = windows.scrollTop();
 		if (scroll < 100) {
 			sticky.removeClass('stick');
@@ -18,19 +19,28 @@ $(document).ready(function() {
 	});
 
 	// Slide Toggle Mobile Menu
-	$('.mobilemenu-icon').click(function() {
+	$('.mobilemenu-icon').click(function () {
 		$('.mobile-menu').slideToggle();
 	});
-	$('.menu-link').click(function() {
-		$('.mobile-menu').slideToggle();
+
+	$(function () {
+		let isMobile = window.matchMedia("only screen and (max-width: 767px)").matches;
+
+		if (isMobile) {
+			$('.menu-link').click(function () {
+				$('.mobile-menu').slideToggle();
+			});
+
+		}
 	});
+
 	// Scroll to Top
-	$(window).scroll(function() {
+	$(window).scroll(function () {
 		if ($(this).scrollTop() > 100) {
 			$('.scroll-top').fadeIn();
 		} else {
 			$('.scroll-top').fadeOut();
 		}
 	});
-	
+
 });
